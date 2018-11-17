@@ -2,4 +2,4 @@ image: python:3.5
 
 test:
   script:
-  - python -m unittest discover -v
+  - python -m unittest discover -v -s $CI_PROJECT_DIR -t $CI_PROJECT_DIR
