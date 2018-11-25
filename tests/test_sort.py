@@ -14,3 +14,5 @@ class SortTestSuite(unittest.TestCase):
     def test_bubble_sort(self):
         self.assertListEqual(src.BubbleSort(self.random_array).sort(), self.sorted_array)
 
+    def test_insertion_sort(self):
+        self.assertListEqual(src.InsertionSort(self.random_array).sort(), self.sorted_array)

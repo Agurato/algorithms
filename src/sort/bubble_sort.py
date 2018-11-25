@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from .. import utils
 
 class BubbleSort():
     def __init__(self, array):
@@ -11,10 +12,7 @@ class BubbleSort():
             swapped = False
             for i in range(1, len(sorted)):
                 if sorted[i] < sorted[i-1]:
-                    tmp = sorted[i]
-                    sorted[i] = sorted[i-1]
-                    sorted[i-1] = tmp
+                    sorted = utils.array_swap_items(sorted, i-1, i)
                     swapped = True
-
 
         return sorted
