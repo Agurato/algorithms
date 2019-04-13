@@ -3,7 +3,6 @@
 from .context import src
 
 import unittest
-import random
 
 
 class UtilsTestSuite(unittest.TestCase):
